@@ -71,6 +71,14 @@ Make sure you have the following software installed on your machine:
     Create .env file and place your API keys in the file. A sample of how to do this is seen on the .env file
 
 
+6. Alternative installation using pip:
+    You can install the project using pip by running the command below:
+
+   ```bash
+   pip install git+https://github.com/george-mountain/web-app-builder--LLM
+   ```
+
+
 ## Usage
 
 ### Running the Application
