@@ -1,7 +1,7 @@
 #### Install Package
 
 ```bash
-pip install weapp_builder
+pip install webapp_builder
 ```
 
 
@@ -9,20 +9,23 @@ pip install weapp_builder
 
 ```python
 # Importing the CodeGenerator and ImageProcessor classes
-from weapp_builder.utilities import CodeGenerator, ImageProcessor
-
+from webapp_builder.utilities import CodeGenerator, ImageProcessor
+from dotenv import load_dotenv, find_dotenv
+import os
+import openai
+load_dotenv(find_dotenv())
+# OpenAI API Key
+api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = api_key
 # Create instances of the classes
 code_generator = CodeGenerator()
 image_processor = ImageProcessor()
-
 # Example usage of CodeGenerator
-code_text = "Your image description text here"
+code_text = "searchbar at the top right corner, navigation menu at the header, company logo at the top left corner. "
 generated_code = code_generator.generate_code(code_text)
 print(generated_code)
-
 # Example usage of ImageProcessor
-image_path = "path/to/your/image.jpg"
-api_key = "your_openai_api_key"  # Provide your OpenAI API key
+image_path = '/path/to_your_web_image_here/'
 image_description = image_processor.get_image_description(image_path, api_key)
 print(image_description)
 ```
@@ -31,9 +34,16 @@ For running the Streamlit app, you can create a separate Python script (let's ca
 
 ```python
 # app_runner.py
-from weapp_builder import main
-
-if __name__ == "__main__":
+from webapp_builder.main import main
+from webapp_builder.utilities import CodeGenerator, ImageProcessor
+from dotenv import load_dotenv, find_dotenv
+import os
+import openai
+load_dotenv(find_dotenv())
+# OpenAI API Key
+api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = api_key
+if _name_ == "_main_":
     main()
 ```
 
