@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="webapp_builder",
-    version="1.0",
+    version="1.1.1",
     author="George Mountain",
     author_email="engrmountain@gmail.com",
     description="Webapp Builder -- LLM/LVM Code Generator",
@@ -46,5 +46,5 @@ setuptools.setup(
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
     ],
-    download_url="https://github.com/george-mountain/web-app-builder--LLM/archive/refs/tags/1.0.tar.gz",
+    download_url="https://github.com/george-mountain/web-app-builder--LLM/archive/refs/tags/1.1.1.tar.gz",
 )

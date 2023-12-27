@@ -1,5 +1,6 @@
 import streamlit as st
-from utilities import CodeGenerator, ImageProcessor
+
+from .utilities import CodeGenerator, ImageProcessor
 
 
 def main():
