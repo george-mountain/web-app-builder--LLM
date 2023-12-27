@@ -11,7 +11,7 @@ setuptools.setup(
     description="Webapp Builder -- LLM/LVM Code Generator",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/george-mountain/web-app-builder--LLM.git",
+    url="https://github.com/george-mountain/web-app-builder--LLM/archive/refs/tags/0.01.zip",
     project_urls={
         "Bug Tracker": "https://github.com/george-mountain/web-app-builder--LLM.git/issues"
     },
