@@ -8,7 +8,7 @@ https://github.com/george-mountain/web-app-builder--LLM/assets/19597087/4541e5f5
 Web Builder App is a Streamlit-based application that allows users to upload an image, generate code based on the contents of the image, and view the code implementation.
 
 ## Table of Contents
-- [Getting Started](#data-flow-diagram)
+- [Data Flow Diagram](#data-flow-diagram)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
