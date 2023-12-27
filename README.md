@@ -1,10 +1,6 @@
 # web-app-builder--LLM
 
-
 https://github.com/george-mountain/web-app-builder--LLM/assets/19597087/4541e5f5-844d-4862-8745-bac3436de6ec
-
-
-
 
 
 # Web Builder App
@@ -91,5 +87,5 @@ The executable will be located in the `dist` folder.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/license/mit/) file for details.
 ```
