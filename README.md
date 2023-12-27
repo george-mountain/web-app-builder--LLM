@@ -29,8 +29,8 @@ Web Builder App is a Streamlit-based application that allows users to upload an 
 
 Make sure you have the following software installed on your machine:
 
-- Python 3.7 or later
-- pip (Python package installer)
+- Python 3.8 or later
+- Pytorch Cuda: CUDA Version >=11.8. Install from here - [Pytorch CUDA Installation](https://pytorch.org/)
 
 ### Installation
 
