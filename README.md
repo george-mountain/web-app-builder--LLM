@@ -67,6 +67,10 @@ Make sure you have the following software installed on your machine:
    pip install -r requirements.txt
    ```
 
+5. Create .env file:
+    Create .env file and place your API keys in the file. A sample of how to do this is seen on the .env file
+
+
 ## Usage
 
 ### Running the Application
