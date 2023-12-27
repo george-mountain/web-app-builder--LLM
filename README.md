@@ -15,7 +15,6 @@ Web Builder App is a Streamlit-based application that allows users to upload an 
 - [Usage](#usage)
   - [Running the Application](#running-the-application)
   - [Generating Executable](#generating-executable)
-- [Contributing](#contributing)
 - [License](#license)
 
 
