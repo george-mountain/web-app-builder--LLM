@@ -1,9 +1,11 @@
 import base64
 import os
+
 import requests
 from dotenv import find_dotenv, load_dotenv
-from langchain import LLMChain, PromptTemplate
+from langchain.chains import LLMChain
 from langchain.chat_models import ChatOpenAI
+from langchain.prompts import PromptTemplate
 from transformers import pipeline
 
 load_dotenv(find_dotenv())
@@ -17,11 +19,11 @@ class CodeGenerator:
 
     def generate_code(self, code_text):
         template = """
-            You are a extremely knowledgeable software engineer, techical engineer and technical instructor who also knows
+            You are an extremely knowledgeable software engineer, techical engineer and technical instructor who also knows
             everything on code implementation, software design, technical design, writing software codes, cloud engineering and programming. 
             You know all there is to know about software and technical design, implementation, deployment and maintenance.
             
-            You've also designed, implemented, designed and deployed many cutting-edge technologies. 
+            You've also designed, implemented, and deployed many cutting-edge technologies. 
             
             You understand how to design software, implement codes, teach newbies coding and even troubleshoot and debug codes
             which can enable peope implement codes and design software at ease. 

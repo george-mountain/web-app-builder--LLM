@@ -9,7 +9,8 @@ pip install webapp_builder
 
 ```python
 # Importing the CodeGenerator and ImageProcessor classes
-from webapp_builder.utilities import CodeGenerator, ImageProcessor
+from webapp_builder import CodeGenerator, ImageProcessor
+
 from dotenv import load_dotenv, find_dotenv
 import os
 import openai
@@ -24,6 +25,7 @@ image_processor = ImageProcessor()
 code_text = "searchbar at the top right corner, navigation menu at the header, company logo at the top left corner. "
 generated_code = code_generator.generate_code(code_text)
 print(generated_code)
+
 # Example usage of ImageProcessor
 image_path = '/path/to_your_web_image_here/'
 image_description = image_processor.get_image_description(image_path, api_key)
@@ -34,8 +36,7 @@ For running the Streamlit app, you can create a separate Python script (let's ca
 
 ```python
 # app_runner.py
-from webapp_builder.main import main
-from webapp_builder.utilities import CodeGenerator, ImageProcessor
+from webapp_builder import main
 from dotenv import load_dotenv, find_dotenv
 import os
 import openai
@@ -58,7 +59,7 @@ Ensure you have your OpenAI API key configured in your environment variables or 
 
 
 # web-app-builder--LLM
-
+#### App Demo (Video Demo)
 https://github.com/george-mountain/web-app-builder--LLM/assets/19597087/4541e5f5-844d-4862-8745-bac3436de6ec
 
 
@@ -73,7 +74,6 @@ Web Builder App is a Streamlit-based application that allows users to upload an 
   - [Installation](#installation)
 - [Usage](#usage)
   - [Running the Application](#running-the-application)
-  - [Generating Executable](#generating-executable)
 - [License](#license)
 
 
@@ -91,7 +91,8 @@ Make sure you have the following software installed on your machine:
 - Python 3.8 or later
 - Pytorch Cuda: CUDA Version >=11.8. Install from here - [Pytorch CUDA Installation](https://pytorch.org/)
 
-### Installation
+### Installation From Github
+---
 
 1. Clone the repository:
 
@@ -130,7 +131,7 @@ Make sure you have the following software installed on your machine:
     Create .env file and place your API keys in the file. A sample of how to do this is seen on the .env file
 
 
-6. Alternative installation using pip:
+6. Alternative installation from Github using pip:
     You can install the project using pip by running the command below:
 
    ```bash
@@ -149,16 +150,6 @@ streamlit run main.py
 ```
 
 Visit the provided URL in your web browser to interact with the application.
-
-### Generating Executable
-
-To create an executable file for your application:
-
-```bash
-pyinstaller --onefile --name "Web Builder App" --exclude-module google.api main.py
-```
-
-The executable will be located in the `dist` folder.
 
 
 ## License
