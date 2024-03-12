@@ -1,1 +1,0 @@
-pyinstaller --onefile --name "Web Builder App" --exclude-module google.api main.py
